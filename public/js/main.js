@@ -29,13 +29,13 @@ You will make client - side AJAX requests to the API and use jQuery to target an
             API endpoint: http://www.omdbapi.com/?apikey=CS546&s={title}
             */
             title = errorCheck.checkIsProperString(title,"Search")
-            const data = await fetch(('http://www.omdbapi.com/?apikey=CS546&s='+title)).then(response => {
+            const data = await fetch(('https://www.omdbapi.com/?apikey=CS546&s='+title)).then(response => {
                 return response.json();
               })
             let movies10=data
             let arr=movies10['Search']
             if(parseInt(movies10['totalResults'])>10){
-              const data = await fetch(('http://www.omdbapi.com/?apikey=CS546&s='+title+"&page=2")).then(response => {
+              const data = await fetch(('https://www.omdbapi.com/?apikey=CS546&s='+title+"&page=2")).then(response => {
                 return response.json();
               })
               let movies20=data
@@ -48,7 +48,7 @@ You will make client - side AJAX requests to the API and use jQuery to target an
            API endpoint: http://www.omdbapi.com/?apikey=CS546&i={id}
             */
            id = errorCheck.checkIsProperString(id,'Id')
-           let data = await fetch(('http://www.omdbapi.com/?apikey=CS546&i='+id)).then(response => {
+           let data = await fetch(('https://www.omdbapi.com/?apikey=CS546&i='+id)).then(response => {
             return response.json();
           })
            return data 

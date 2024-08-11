@@ -1,0 +1,307 @@
+/*
+You must include 5 CSS rules that aply to your application
+*/
+/* General Styles */
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.not-found, .error {
+    color: #dc3545;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+ol li {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    margin-bottom: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+ol li:hover {
+    background-color: #e9ecef;
+}
+
+ol li a {
+    text-decoration: none;
+    color: #343a40;
+    display: flex;
+    align-items: center;
+}
+
+.searchResultImage {
+    width: 75px;
+    height: 117px;
+    object-fit: cover;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+main p {
+    font-size: 18px;
+    color: #495057;
+}
+
+.new-post-form {
+    margin-top: 20px;
+}
+
+.new-post-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #495057;
+}
+
+.new-post-form input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.new-post-form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.new-post-form input[type="submit"]:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+article {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+article h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+article img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+article h2, article h3, article h4 {
+    font-size: 22px;
+    margin-top: 20px;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 5px;
+    color: #007bff;
+}
+
+article p {
+    font-size: 18px;
+    color: #495057;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+dt {
+    width: 200px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #343a40;
+}
+
+dd {
+    margin-left: 0;
+    margin-bottom: 10px;
+    width: calc(100% - 210px);
+    color: #495057;
+}
+
+.my_coolratings_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.my_coolratings_table th, .my_coolratings_table td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: left;
+}
+
+.my_coolratings_table th {
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+}
+
+.my_coolratings_table td {
+    background-color: #ffffff;
+    color: #495057;
+}
+
+
+/* Specific styles for the Movie Finder page */
+#error {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #343a40;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#searchResults {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+}
+
+#searchResults li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#movieDetails {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#rootLink {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1em;
+    color: #343a40;
+    text-decoration: none;
+}
+
+#rootLink:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}

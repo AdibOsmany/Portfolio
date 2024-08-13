@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Header Buttons</title>
-    <link rel="stylesheet" href="../public/css/tyles.css">
+    <link rel="stylesheet" href="../public/css/styles.css">
 </head>
 <body>
     <div class="header" id="header">
-        <button class="nav-button" id="home">Home</button>
-        <button class="nav-button" id="about">About</button>
-        <button class="nav-button" id="portfolio">Portfolio</button>
-        <button class="nav-button" id="contact">Contact</button>
+        <button class="nav-button" data-target="home-section">Home</button>
+        <button class="nav-button" data-target="about-section">About</button>
+        <button class="nav-button" data-target="portfolio-section">Portfolio</button>
+        <button class="nav-button" data-target="contact-section">Contact</button>
     </div>
     <div class="content">
-        <section class="section" id="home-section">Home Section</section>
+        <section class="section" id="home-section">
+            <div class="sun"></div>
+            <div class="planet earth"></div>
+            <div class="planet mars"></div>
+            <div class="planet"></div> <!-- Example additional planet -->
+            <div class="home-greeting">            
+                <h2 id="greeting">Hi! I am</h2>
+                <h1 id="name">Adib Osmany</h1>
+            </div>
+        </section>
         <section class="section" id="about-section">About Section</section>
         <section class="section" id="portfolio-section">Portfolio Section</section>
         <section class="section" id="contact-section">Contact Section</section>

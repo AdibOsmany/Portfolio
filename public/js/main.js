@@ -1,14 +1,27 @@
-document.addEventListener('scroll', function() {
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.nav-button');
   const sections = document.querySelectorAll('.section');
-  const headerButtons = document.querySelectorAll('.nav-button');
 
-  let index = sections.length;
+  buttons.forEach(button => {
+      button.addEventListener('click', () => {
+          const targetId = button.getAttribute('data-target');
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) {
+              window.scrollTo({
+                  top: targetSection.offsetTop,
+                  behavior: 'smooth'
+              });
+          }
+      });
+  });
 
-  while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
-
-  headerButtons.forEach((button) => button.classList.remove('active'));
-  if (sections[index]) {
-      const activeButton = document.getElementById(sections[index].id.split('-')[0]);
-      if (activeButton) activeButton.classList.add('active');
-  }
+  document.addEventListener('scroll', () => {
+      let index = sections.length;
+      while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+      buttons.forEach(button => button.classList.remove('active'));
+      if (sections[index]) {
+          const activeButton = Array.from(buttons).find(button => button.getAttribute('data-target') === sections[index].id);
+          if (activeButton) activeButton.classList.add('active');
+      }
+  });
 });

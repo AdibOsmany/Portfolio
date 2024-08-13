@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Header Buttons</title>
+    <title>Adib Osmany</title>
     <link rel="stylesheet" href="../public/css/styles.css">
 </head>
 <body>
@@ -16,12 +16,21 @@
     <div class="content">
         <section class="section" id="home-section">
             <div class="solar-system">
+                <!-- Static Sun -->
                 <div class="sun"></div>
-                <div class="planet earth"></div>
-                <div class="planet mars"></div>
-                <div class="planet"></div> <!-- Example additional planet -->
+
+                <!-- Planets as clickable buttons -->
+                <button class="planet-button" data-target="about-section">
+                    <div class="planet earth"></div>
+                </button>
+                <button class="planet-button" data-target="portfolio-section">
+                    <div class="planet mars"></div>
+                </button>
+                <button class="planet-button" data-target="contact-section">
+                    <div class="planet jupiter"></div>
+                </button>
             </div>
-            <div class="home-greeting">            
+            <div class="home-greeting">
                 <h2 id="greeting">Hi! I am</h2>
                 <h1 id="name">Adib Osmany</h1>
             </div>

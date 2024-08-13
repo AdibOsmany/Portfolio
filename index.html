@@ -5,40 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adib Osmany</title>
     <link rel="stylesheet" href="../public/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet"> <!-- Orbitron font as an alternative to Star Wars style -->
 </head>
 <body>
-    <div class="header" id="header">
+
+    <header class="header" id="header">
         <button class="nav-button" data-target="home-section">Home</button>
         <button class="nav-button" data-target="about-section">About</button>
         <button class="nav-button" data-target="portfolio-section">Portfolio</button>
         <button class="nav-button" data-target="contact-section">Contact</button>
-    </div>
+    </header>
     <div class="content">
-        <section class="section" id="home-section">
-            <div class="solar-system">
-                <!-- Static Sun -->
-                <div class="sun"></div>
-
-                <!-- Planets as clickable buttons -->
-                <button class="planet-button" data-target="about-section">
-                    <div class="planet earth"></div>
-                </button>
-                <button class="planet-button" data-target="portfolio-section">
-                    <div class="planet mars"></div>
-                </button>
-                <button class="planet-button" data-target="contact-section">
-                    <div class="planet jupiter"></div>
-                </button>
-            </div>
+       <section class="section" id="home-section">
             <div class="home-greeting">
-                <h2 id="greeting">Hi! I am</h2>
-                <h1 id="name">Adib Osmany</h1>
+                <h1 id="first_name">Adib</h1>
+                <h1 id="last_name">Osmany</h1>
             </div>
         </section>
+
         <section class="section" id="about-section">About Section</section>
         <section class="section" id="portfolio-section">Portfolio Section</section>
         <section class="section" id="contact-section">Contact Section</section>
     </div>
-    <script src="../public/js/main.js"></script>
+    <script src="../public/js/section.js"></script>
+    <script src="../public/js/universe.js"></script>
 </body>
 </html>

@@ -1,9 +1,9 @@
 /* header.css */
 
-.header {
+header {
     position: sticky;
     top: 0;
-    background-color: #222;
+    background-color: rgba(34, 34, 34); /* 50% transparency */
     color: white;
     padding: 15px 30px;
     display: flex;

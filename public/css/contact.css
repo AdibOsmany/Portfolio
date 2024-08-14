@@ -1,4 +1,126 @@
+/* Contact Section */
 #contact-section {
-    background-color: #f39c12;
-
+    background: linear-gradient(135deg, #1A2A6C, #B21F1F, #FDBB2D); /* Vibrant gradient */
+    padding: 60px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#contact-section form {
+    background: rgba(255, 255, 255, 0.1); /* Transparent white for a modern look */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    backdrop-filter: blur(10px); /* For a frosted glass effect */
+}
+
+#contact-section .verticleContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+#contact-section #contactMsg {
+    background-color: #fff; /* White background for the message box */
+    color: #333; /* Dark text color */
+    padding: 15px 20px; /* Padding around the text */
+    margin-bottom: 20px; /* Space below the message box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    font-size: 1.1em; /* Slightly larger text */
+    text-align: center; /* Center the text */
+    display: none; /* Hide by default, use JavaScript to show */
+    width: 100%; /* Ensure it matches the form's width */
+}
+
+/* Success message style */
+#contact-section #contactMsg.success {
+    background-color: #2ecc71; /* Green background for success */
+    color: #fff; /* White text color */
+}
+
+/* Error message style */
+#contact-section #contactMsg.error {
+    background-color: #e74c3c; /* Red background for error */
+    color: #fff; /* White text color */
+}
+
+#contact-section form {
+    width: 100%; /* Ensure the form takes up the full width of the container */
+}
+
+
+
+#contact-section input[type="text"],
+#contact-section input[type="email"],
+#contact-section textarea {
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2); /* Slight transparency */
+    color: #fff;
+    font-size: 1em;
+    transition: background 0.3s ease;
+    placeholder {
+        color: #ccc; /* Placeholder color */
+    }
+}
+
+#contact-section input[type="text"]::placeholder,
+#contact-section input[type="email"]::placeholder,
+#contact-section textarea::placeholder {
+    color: #cccccc; /* Custom placeholder color */
+    opacity: 1; /* Ensure the placeholder color is not transparent */
+    padding-left: 20px; /* Ensure the placeholder aligns with input text */
+}
+
+#contact-section input[type="text"]:focus,
+#contact-section input[type="email"]:focus,
+#contact-section textarea:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3); /* Brighter on focus */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    
+}
+
+#contact-section textarea {
+    height: 150px;
+    resize: none;
+}
+
+#contact-section button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background: #FF5F6D;  /* Modern vibrant color */
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 95, 109, 0.3);
+}
+
+#contact-section button:hover {
+    background: #FFC371;  /* A brighter shade on hover */
+}
+
+#contact-section button:active {
+    background: #FF5F6D;
+    box-shadow: 0 2px 10px rgba(255, 95, 109, 0.5);
+}
+
+.hidden {
+    display: none !important;
+}
+

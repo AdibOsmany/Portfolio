@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adib Osmany</title>
     <link rel="stylesheet" href="public/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet"> <!-- Orbitron font as an alternative to Star Wars style -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js"></script>
 </head>
 <body>
 
@@ -15,19 +17,35 @@
         <button class="nav-button" data-target="portfolio-section">Portfolio</button>
         <button class="nav-button" data-target="contact-section">Contact</button>
     </header>
+    
     <div class="content">
-       <section class="section" id="home-section">
+        <section class="section" id="home-section">
             <div class="home-greeting">
                 <h1 id="first_name">Adib</h1>
                 <h1 id="last_name">Osmany</h1>
             </div>
+            <div id="threejs-container"></div> <!-- Container for the 3D model -->
         </section>
 
         <section class="section" id="about-section">About Section</section>
         <section class="section" id="portfolio-section">Portfolio Section</section>
-        <section class="section" id="contact-section">Contact Section</section>
+        <section class="section" id="contact-section">
+            <div class="verticleContact">
+                <div id="contactMsg" hidden></div>
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="11a5d0f5-412b-4d1f-bf49-88f7eec72f79">
+                    <input placeholder="name" type="text" name="name" required>
+                    <input placeholder="email" type="email" name="email" required>
+                    <textarea placeholder="message" name="message" required></textarea>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <button type="submit">Submit Form</button>
+                </form>
+            </div>
+        </section>
     </div>
+    <script src="public/js/spaceship.js"></script>
     <script src="public/js/section.js"></script>
     <script src="public/js/universe.js"></script>
+    <script src="public/js/contact.js"></script>
 </body>
 </html>

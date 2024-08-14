@@ -1,5 +1,12 @@
 /* styles.css */
 
+@import url('header.css');
+@import url('home.css');
+@import url('about.css');
+@import url('portfolio.css');
+@import url('contact.css');
+
+
 /* Global styles */
 body {
     margin: 0;

@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load the GLB model
     let spaceship;
     const loader = new THREE.GLTFLoader();
-    loader.load('../data/Spaceship.glb', (gltf) => {
+    loader.load('../../data/Spaceship.glb', (gltf) => {
         spaceship = gltf.scene;
         spaceship.scale.set(0.08, 0.08, 0.08); // Make the spaceship slightly bigger
 

@@ -33,18 +33,9 @@
     height: 1px;
     background-color: white;
     border-radius: 50%;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Brighter stars */
-    animation: twinkle 15s infinite alternate;
+    box-shadow: 0 0 15px rgba(255, 255, 255); /* Brighter stars */
 }
 
-@keyframes twinkle {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0.3;
-    }
-}
 
 /* Dark Name with Yellow Star-Like Outline */
 #first_name, #last_name {

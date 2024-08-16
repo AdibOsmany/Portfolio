@@ -35,34 +35,18 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const buttons = document.querySelectorAll('.planet-button');
+// document.addEventListener('DOMContentLoaded', () => {
+//     const header = document.querySelector('header');
+//     const sections = document.querySelectorAll('.section');
 
-    buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            const targetId = button.getAttribute('data-target');
-            const targetSection = document.getElementById(targetId);
-            
-            if (targetSection) {
-                targetSection.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    });
+//     const headerHeight = header.offsetHeight;
+//     const sectionHeight = `calc(100vh - ${headerHeight}px)`;
 
-});
+//     sections.forEach(section => {
+//         section.style.height = sectionHeight;
+//     });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const header = document.querySelector('header');
-    const sections = document.querySelectorAll('.section');
-
-    const headerHeight = header.offsetHeight;
-    const sectionHeight = `calc(100vh - ${headerHeight}px)`;
-
-    sections.forEach(section => {
-        section.style.height = sectionHeight;
-    });
-
-});
+// });
 
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');

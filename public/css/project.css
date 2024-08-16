@@ -1,4 +1,5 @@
 #project-section {
-    background-color: #3a068e;
+    background: linear-gradient(to bottom, #4682b4 0%, #87cefa 50%, #98fb98 100%); /* Light blue to light green gradient */
+
 
 }

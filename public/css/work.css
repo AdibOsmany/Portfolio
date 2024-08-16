@@ -1,4 +1,5 @@
 #work-section {
-    background-color: #2ecc71;
+    background: linear-gradient(to bottom, #1b263b 0%, #2c3e50 50%, #4682b4 100%); /* Dark blue to medium blue to light blue gradient */
+
 
 }

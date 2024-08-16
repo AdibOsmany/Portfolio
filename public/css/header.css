@@ -69,16 +69,15 @@ header .logo {
     text-transform: uppercase;
     color: #fff;
 }
-
-@media (max-width: 768px) {
+/* Media query to collapse the header on small screens */
+@media (max-width: 600px) {
     header {
-        flex-direction: column;
-        padding: 15px 10px;
+        height: 0;
+        padding: 0; /* Remove padding to make the height fully collapse */
+        overflow: hidden; /* Hide the content when the height is 0 */
     }
-
+    
     .nav-button {
-        margin: 5px 0;
-        width: 100%;
-        text-align: center;
+        display: none; /* Optionally hide navigation buttons */
     }
 }

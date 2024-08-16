@@ -2,11 +2,12 @@
     display: flex;
     justify-content: space-between; /* Align the content to the left */
     align-items: flex-start; /* Align items to the top */
-    background-color: #e4b1ab; /* Background color for the section */
+    background: linear-gradient(to bottom, #000000 0%, #0d1b2a 50%, #1b263b 100%); /* Black to dark blue gradient */
     padding: 2%; /* Padding to space out the content */
-    height: 100vh; /* Full viewport height */
     box-sizing: border-box;
     column-gap: 5% ;
+    height: auto; /* Allow the height to adjust to content */
+    flex-wrap: wrap; /* Allow wrapping of items when screen size reduces */
 }
 
 .education-label {
@@ -23,7 +24,7 @@
 .stevens {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     flex: 1;
 }
 
@@ -102,6 +103,7 @@
     animation: modalOpen 0.3s ease-in-out;
     overflow: hidden; /* Ensure no scrolling */
     display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack content vertically */
     position: relative; /* Required for close button positioning */
 }
 
@@ -193,7 +195,7 @@
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     #about-section {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items on smaller screens */
@@ -209,20 +211,34 @@
         max-width: 300px;
         height: auto; /* Adjust height for mobile */
     }
+    .modal-content {
+        width: 95%; /* Take up more of the screen on very small devices */
+        max-width: 400px; /* Further reduce max-width */
+        padding: 10px; /* Further reduce padding */
+        height: auto;
+    }
 
     .modal-body {
         flex-direction: column; /* Stack content vertically on smaller screens */
     }
 
     .modal-video {
-        max-width: 100%;
+        max-width: 100%; /* Ensure video scales with modal */
+        height: auto;
     }
+
+    .close {
+        font-size: 20px; /* Reduce size of the close button */
+        top: 10px;
+        right: 10px;
+    }
+
 }
 
 #interests {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     flex: 1;
 }
 
@@ -285,7 +301,7 @@
 #skills {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     flex: 1;
 }
 
@@ -348,3 +364,21 @@
     }
 }
 
+/* Responsive layout for smaller screens */
+@media (max-width: 700px) {
+    #about-section {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items on smaller screens */
+        height: auto
+    }
+
+    .stevens, .interests, .skills {
+        width: 100%; /* Take full width when stacked */
+        margin: 10px 0; /* Add vertical spacing between stacked items */
+    }
+
+    .stevens-card, .interests-card, .skills-card {
+        width: 100%; /* Ensure the cards take full width */
+        height: auto; /* Let the height adjust to the content */
+    }
+}

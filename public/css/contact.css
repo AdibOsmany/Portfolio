@@ -1,6 +1,6 @@
 /* Contact Section */
 #contact-section {
-    background: linear-gradient(135deg, #1A2A6C, #B21F1F, #FDBB2D); /* Vibrant gradient */
+    background: linear-gradient(to bottom, #98fb98 0%, #2e8b57 50%, #006400 100%); /* Light green to dark green gradient */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -68,7 +68,7 @@
     border-radius: 8px;
     border: none;
     background: rgba(255, 255, 255, 0.2); /* Slight transparency */
-    color: #fff;
+    color: #000000;
     font-size: 1em;
     transition: background 0.3s ease;
     placeholder {
@@ -79,7 +79,7 @@
 #contact-section input[type="text"]::placeholder,
 #contact-section input[type="email"]::placeholder,
 #contact-section textarea::placeholder {
-    color: #cccccc; /* Custom placeholder color */
+    color: #2f2c2c; /* Custom placeholder color */
     opacity: 1; /* Ensure the placeholder color is not transparent */
 }
 

@@ -22,7 +22,7 @@
 
 .homeDiv {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Default layout: text next to the picture */
     align-items: center; /* Center-align image and text */
     justify-content: center;
     z-index: 2;
@@ -31,11 +31,11 @@
 
 /* Profile Picture Styles with Glow Effect */
 .profile-picture {
-    width: 350px; /* Increase size */
-    height: 350px; /* Maintain square ratio */
-    border-radius: 50%; /* Make the image a circle */
-    object-fit: cover; /* Ensure the image covers the circle evenly */
-    box-shadow: 0 0 30px rgba(30, 120, 255, 0.8); /* Increase glow effect */
+    width: 350px; 
+    height: 350px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    box-shadow: 0 0 30px rgba(30, 120, 255, 0.8); 
     margin: 30px;
 }
 
@@ -44,8 +44,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center; /* Center-align text */
-    z-index: 2; /* Ensure text stays above the starfield */
+    text-align: center; 
+    z-index: 2; 
     padding: 30px;
 }
 

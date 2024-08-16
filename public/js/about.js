@@ -5,7 +5,7 @@ var modal = document.getElementById("stevensModal");
 var card = document.getElementById("stevens-card");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementById("stevensClose");
 
 // When the user clicks the card, open the modal 
 card.onclick = function() {

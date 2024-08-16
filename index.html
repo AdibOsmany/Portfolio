@@ -6,29 +6,153 @@
     <title>Adib Osmany</title>
     <link rel="stylesheet" href="public/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js"></script>
 </head>
 <body>
 
     <header class="header" id="header">
         <button class="nav-button" data-target="home-section">Home</button>
         <button class="nav-button" data-target="about-section">About</button>
-        <button class="nav-button" data-target="portfolio-section">Portfolio</button>
+        <button class="nav-button" data-target="work-section">Work Experience</button>
+        <button class="nav-button" data-target="project-section">Projects</button>
         <button class="nav-button" data-target="contact-section">Contact</button>
     </header>
     
     <div class="content">
+
         <section class="section" id="home-section">
-            <div class="home-greeting">
-                <h1 id="first_name">Adib</h1>
-                <h1 id="last_name">Osmany</h1>
+            <div class="homeDiv">   
+                <img src="data/linkedinIDok.webp" alt="Adib's profile picture" class="profile-picture"></div>                    
+                <div class="home-greeting">
+                    <h1 id="first_name">Adib</h1>
+                    <h1 id="last_name">Osmany</h1>
+                    <h3 id="role">Software Engineer</h3>
+                </div>
             </div>
-            <div id="threejs-container"></div> <!-- Container for the 3D model -->
         </section>
 
-        <section class="section" id="about-section">About Section</section>
-        <section class="section" id="portfolio-section">Portfolio Section</section>
+<section class="section" id="about-section">
+    <div class="stevens" id="stevens">
+        <label for="stevens" class="education-label">Education</label>
+        <article class="stevens-card" id="stevens-card">
+            <img src="data/stevens_institute_of_technology_logo.jpg" alt="stevensLogo" class="stevens-logo">
+            <h2 class="stevens-name">Stevens Institute of Technology</h2>
+            <h4 class="stevens-bio">Major: Computer Science</h4>
+            <h3 class="stevens-time">September 2022 - May 2025</h3>
+        </article>
+
+        <!-- Popup Modal -->
+        <div id="stevensModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <div class="modal-body">
+                    <!-- Video Container with Title Above -->
+                    <div class="video-container">
+                        <h2>Stevens Institute of Technology</h2>
+                        <video preload="none" role="presentation" loop="" playsinline="" muted="" autoplay="" class="modal-video">
+                            <source src="https://assets.stevens.edu/mviowpldu823/3H1RM203TdsbGPgHO5gBGZ/3482c08ac93a93537a8f21f4aaae384e/Home_Page_F23.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <!-- Organized Content on the right -->
+                    <div class="modal-details">
+                        <dl class="details-list">
+                            <dt>Major:</dt>
+                            <dd>Computer Science</dd>
+
+                            <dt>Time:</dt>
+                            <dd>September 2022 - May 2025</dd>
+
+                            <dt>Coursework:</dt>
+                            <dd>Deep Learning, Data Management, Web Programming, Machine Learning, Artificial Intelligence, Concurrent Programming, Systems Programming, Algorithms, Data Structures, Computer Architecture</dd>
+
+                            <dt>Extracurriculars:</dt>
+                            <dd>Stevens Robotics Club, Stevens IEEE Club, Stevens Computer Science Club</dd>
+
+                            <dt>Awards:</dt>
+                            <dd>Edwin A. Stevens Scholarship</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="interests" id="interests">
+        <label for="interests" class="interests-label">Interests</label>
+        <article class="interests-card" id="interests-card">
+            <div class="interest-item">
+                <img src="data/interests/code-icon.svg" alt="swe" class="interest-logo" id="swe-logo">
+                <label for="swe-logo">Software Engineering</label>
+            </div>
+            <div class="interest-item">
+                <img src="data/interests/artificial-intelligence-ai-chip-icon.svg" alt="ai" class="interest-logo" id="ai-logo">
+                <label for="ai-logo">Artificial Intelligence</label>
+            </div>
+            <div class="interest-item">
+                <img src="data/interests/full-stack-developer-icon.svg" alt="full-stack-developer" class="interest-logo" id="fullStack-logo">
+                <label for="fullStack-logo">Full Stack Development</label>
+            </div>
+            <div class="interest-item">
+                <img src="data/interests/market-research-analysis-icon.svg" alt="data-managment" class="interest-logo" id="data-managment-logo">
+                <label for="data-managment-logo">Data Managment</label>
+            </div>
+        </article>
+    </div>
+    <div class="skills" id="skills">
+        <label for="skills" class="skills-label">Skills</label>
+        <article class="skills-card" id="skills-card">
+            <div class="skill-item">
+                <img src="data/skills/python-programming-language-icon.svg" alt="Python" class="python-logo" id="python-logo">
+            </div>
+            <div class="skill-item">
+                <img src="data/skills/java-programming-language-icon.svg" alt="Java" class="java-logo" id="java-logo">
+            </div>
+            <div class="skill-item">
+                <img src="data/skills/c-plus-plus-programming-language-icon.svg" alt="Cpp" class="cpp-logo" id="cpp-logo">
+            </div>
+            <div class="skill-item">
+                <img src="data/skills/c-program-icon.svg" alt="C" class="c-logo" id="c-logo">
+            </div>
+            <div class="skill-item">
+                <img src="data/skills/javascript-programming-language-icon.svg" alt="JS" class="js-logo" id="js-logo">
+            </div>
+            <div class="skill-item">
+                <img src="data/skills/html-icon.svg" alt="HTML" class="html-logo" id="html-logo">
+            </div>
+            <div class="skill-item">
+                <img src="data/skills/css-icon.svg" alt="CSS" class="css-logo" id="css-logo">
+            </div>
+            <div class="skill-item">
+                <img src="data/skills/git-icon.svg" alt="Git" class="git-logo" id="git-logo">
+            </div>
+            <div class="skill-item">
+                <img src="data/skills/postgresql-icon.svg" alt="SQL" class="sql-logo" id="sql-logo">
+            </div>
+            <div class="skill-item">
+                <img src="data/skills/node-js-icon.svg" alt="Nodejs" class="nodejs-logo" id="nodejs-logo">
+            </div>
+            <div class="skill-item">
+                <img src="data/skills/ubuntu-color-icon.svg" alt="Linux" class="linux-logo" id="linux-logo">
+            </div>
+            <div class="skill-item">
+                <img src="data/skills/aws-icon.svg" alt="AWS" class="aws-logo" id="aws-logo">
+            </div>
+        </article>
+    </div>
+    
+    
+</section>
+
+        
+
+        
+        
+        
+        
+ 
+        <section class="section" id="work-section">Portfolio Section</section>
+        <section class="section" id="project-section">Portfolio Section</section>
         <section class="section" id="contact-section">
             <div class="verticleContact">
                 <div id="contactMsg" hidden></div>
@@ -43,7 +167,7 @@
             </div>
         </section>
     </div>
-    <script src="public/js/spaceship.js"></script>
+    <script src="public/js/about.js"></script>
     <script src="public/js/section.js"></script>
     <script src="public/js/universe.js"></script>
     <script src="public/js/contact.js"></script>

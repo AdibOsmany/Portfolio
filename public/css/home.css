@@ -1,64 +1,98 @@
-/* Darkened home.css with more stars and centered, larger name */
-
 #home-section {
     position: relative;
     overflow: hidden;
-    background: radial-gradient(circle, rgba(5, 5, 20, 1) 0%, rgba(0, 0, 10, 1) 100%); /* Darker background */
+    background: radial-gradient(circle, rgba(5, 5, 20, 1) 0%, rgba(0, 0, 10, 1) 100%);
     background-size: cover;
-    
 }
 
-#home-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.9;
-    z-index: 0;
-    animation: starfield 200s linear infinite;
-}
 
 @keyframes starfield {
     from { transform: translateY(0); }
     to { transform: translateY(-3000px); }
 }
 
-/* Increased number of dynamically generated stars */
-
 .star {
     position: absolute;
-    width: 1px; /* Smaller stars */
+    width: 1px;
     height: 1px;
     background-color: white;
     border-radius: 50%;
-    box-shadow: 0 0 15px rgba(255, 255, 255); /* Brighter stars */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1);
 }
 
+.homeDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align image and text */
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+}
 
-/* Dark Name with Yellow Star-Like Outline */
+/* Profile Picture Styles with Glow Effect */
+.profile-picture {
+    width: 350px; /* Increase size */
+    height: 350px; /* Maintain square ratio */
+    border-radius: 50%; /* Make the image a circle */
+    object-fit: cover; /* Ensure the image covers the circle evenly */
+    box-shadow: 0 0 30px rgba(30, 120, 255, 0.8); /* Increase glow effect */
+    margin: 30px;
+}
+
+/* Greeting Text Container */
+.home-greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; /* Center-align text */
+    z-index: 2; /* Ensure text stays above the starfield */
+    padding: 30px;
+}
+
+/* Name Styles */
 #first_name, #last_name {
     font-family: 'Orbitron', sans-serif; /* Use a futuristic font */
     color: #000000; /* Dark text color */
     text-transform: uppercase;
     font-weight: 900;
     text-shadow: 
-        0 0 2px #1e78ff,  /* Subtle yellow outline */
+        0 0 2px #1e78ff,  /* Subtle blue outline */
         0 0 5px #1e78ff, 
         0 0 10px #1e78ff;
     letter-spacing: 5px;
     margin: 0;
     padding: 0;
-    font-size: 8vw; /* Make the name larger */
+    font-size: 6vw; /* Increase size */
+    line-height: 1.2; /* Adjust line height to improve spacing */
 }
 
-.home-greeting {
-    position: absolute;
-    top: 50%; /* Centered vertically */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 2;
-    white-space: nowrap; /* Ensure the name stays on one line */
+/* Role Styles */
+#role {
+    margin-top: 15px;
+    font-size: 3vw; /* Increase size */
+    color: #a90000; /* Subtle color for the role */
+    text-shadow: 
+        0 0 2px #093e8d, 
+        0 0 5px #043785;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .homeDiv {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-picture {
+        width: 250px; /* Adjust size for smaller screens */
+        height: 250px;
+    }
+
+    #first_name, #last_name {
+        font-size: 8vw; /* Increase font size for smaller screens */
+    }
+
+    #role {
+        font-size: 5vw; /* Adjust role size for smaller screens */
+    }
 }

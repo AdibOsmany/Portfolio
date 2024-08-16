@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between; /* Align the content to the left */
     align-items: flex-start; /* Align items to the top */
-    background: linear-gradient(to bottom, #000000 0%, #0d1b2a 50%, #1b263b 100%); /* Black to dark blue gradient */
+    background: linear-gradient(to bottom, #000000 20%, #0d1b2a 50%, #1b263b 100%); /* Black to dark blue gradient */
     padding: 2%; /* Padding to space out the content */
     box-sizing: border-box;
     column-gap: 5% ;

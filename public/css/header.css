@@ -70,7 +70,7 @@ header .logo {
     color: #fff;
 }
 /* Media query to collapse the header on small screens */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     header {
         height: 0;
         padding: 0; /* Remove padding to make the height fully collapse */

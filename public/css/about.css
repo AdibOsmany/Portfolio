@@ -195,7 +195,7 @@
 }
 
 /* Responsive Adjustments */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #about-section {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items on smaller screens */
@@ -365,7 +365,7 @@
 }
 
 /* Responsive layout for smaller screens */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     #about-section {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items on smaller screens */

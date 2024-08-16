@@ -1,7 +1,7 @@
 #home-section {
     position: relative;
     overflow: hidden;
-    background: radial-gradient(circle, rgba(5, 5, 20, 1) 0%, rgba(0, 0, 10, 1) 100%);
+    background: #000000;
     background-size: cover;
 }
 
@@ -96,3 +96,4 @@
         font-size: 5vw; /* Adjust role size for smaller screens */
     }
 }
+

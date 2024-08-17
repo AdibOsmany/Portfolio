@@ -34,16 +34,16 @@
             <div class="stevens" id="stevens">
                 <label for="stevens" class="education-label">Education</label>
                 <article class="stevens-card" id="stevens-card">
-                    <img src="data/stevens_institute_of_technology_logo.jpg" alt="stevensLogo" class="stevens-logo">
+                    <img src="data/stevens_institute_of_technology_logo.jpg" alt="stevens-logo" class="stevens-logo">
                     <h2 class="stevens-name">Stevens Institute of Technology</h2>
                     <h4 class="stevens-bio">Computer Science</h4>
                     <h3 class="stevens-time">September 2022 - May 2025</h3>
                 </article>
 
                 <!-- Popup Modal -->
-                <div id="stevensModal" class="modal">
+                <div id="stevens-modal" class="modal">
                     <div class="modal-content">
-                        <span class="close" id="stevensClose">&times;</span>
+                        <span class="close" id="stevens-close">&times;</span>
 
                         <div class="modal-body">
                             <!-- Video Container with Title Above -->
@@ -144,27 +144,20 @@
             
         </section>
 
-        
-
-        
-        
-        
-        
-
         <section class="section" id="work-section">
-            <label for="work-section" class="work-label">Work Experience</label>
-            <div class="work" id="ufa">
-                <article class="work-card" id="ufa-card">
-                    <img src="data/ufa_inc_logo.jpg" alt="ufaLogo" class="work-logo">
-                    <h2 class="work-name">UFA, Inc.</h2>
-                    <h4 class="work-bio">Software Engineer (Intern)</h4>
-                    <h3 class="work-time">July 2024 - Present</h3>
+            <label for="work-section" class="card-label">Work Experience</label>
+            <div class="card" id="ufa">
+                <article class="chip" id="ufa-chip">
+                    <img src="data/ufa_inc_logo.jpg" alt="ufa-logo" class="chip-logo">
+                    <h2 class="chip-name">UFA, Inc.</h2>
+                    <h4 class="chip-bio">Software Engineer (Intern)</h4>
+                    <h3 class="chip-time">July 2024 - Present</h3>
                 </article>
         
                 <!-- Popup Modal -->
-                <div id="ufaModal" class="modal">
+                <div id="ufa-modal" class="modal">
                     <div class="modal-content">
-                        <span class="close" id="ufaClose">&times;</span>
+                        <span class="close" id="ufa-close">&times;</span>
         
                         <div class="modal-body">
                             <!-- Video Container with Title Above -->
@@ -197,18 +190,18 @@
                 </div>
             </div>
 
-            <div class="work" id="TA">
-                <article class="work-card" id="ta-card">
-                    <img src="data/stevens_institute_of_technology_logo.jpg" alt="taLogo" class="work-logo">
-                    <h2 class="work-name">Stevens Institute of Technology</h2>
-                    <h4 class="work-bio">Data Structures Course Assistant</h4>
-                    <h3 class="work-time">January 2024 - May 2024</h3>
+            <div class="card" id="TA">
+                <article class="chip" id="ta-chip">
+                    <img src="data/stevens_institute_of_technology_logo.jpg" alt="ta-logo" class="chip-logo">
+                    <h2 class="chip-name">Stevens Institute of Technology</h2>
+                    <h4 class="chip-bio">Data Structures Course Assistant</h4>
+                    <h3 class="chip-time">January 2024 - May 2024</h3>
                 </article>
         
                 <!-- Popup Modal -->
-                <div id="taModal" class="modal">
+                <div id="ta-modal" class="modal">
                     <div class="modal-content">
-                        <span class="close" id="taClose">&times;</span>
+                        <span class="close" id="ta-close">&times;</span>
         
                         <div class="modal-body">
                             <!-- Video Container with Title Above -->
@@ -242,9 +235,133 @@
             </div>
         </section>
 
-        <section class="section" id="project-section">Portfolio Section</section>
+        <section class="section" id="project-section">
+            <label for="project-section" class="card-label">Projects</label>
+
+            <div class="card" id="tetris">
+                <article class="chip" id="tetris-chip">
+                    <img src="data/projects/tetris_logo.png" alt="tetris-logo" class="chip-logo">
+                    <h2 class="chip-name">Tetris AI</h2>
+                    <h3 class="chip-time">January 2024 - May 2024</h3>
+                </article>
+        
+                <!-- Popup Modal -->
+                <div id="tetris-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="tetris-close">&times;</span>
+        
+                        <div class="modal-body">
+                            <!-- Video Container with Title Above -->
+                            <div class="video-container">
+                                <h2>Tetris AI</h2>
+                                <video preload="none" role="presentation" loop="" playsinline="" muted="" autoplay="" class="modal-video">
+                                    <source src="data/projects/tetris-video.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+        
+                            <!-- Organized Content on the right -->
+                            <div class="modal-details">
+                                <dl class="details-list">
+                                    <dt>Position:</dt>
+                                    <dd>Creator</dd>
+        
+                                    <dt>Tools Used:</dt>
+                                    <dd>Python: PyTorch, Stable-Baselines3, Custom Open AI Gym Environment, EasyOcr</dd>
+        
+                                    <dt>Description:</dt>
+                                    <dd>Developed and deployed an AI model using Proximal Policy Optimization Reinforcement Learning algorithm for Tetris game play, earning recognition and selection for display at the 2024 SES Symposium on Generative AI.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="cpu">
+                <article class="chip" id="cpu-chip">
+                    <img src="data/projects/cpu-logo.png" alt="cpu-logo" class="chip-logo">
+                    <h2 class="chip-name">CPU</h2>
+                    <h3 class="chip-time">November 2023 - December 2023</h3>
+                </article>
+        
+                <!-- Popup Modal -->
+                <div id="cpu-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="cpu-close">&times;</span>
+        
+                        <div class="modal-body">
+                            <!-- Video Container with Title Above -->
+                            <div class="video-container">
+                                <h2>CPU Project</h2>
+                                <video preload="none" role="presentation" loop="" playsinline="" muted="" autoplay="" class="modal-video">
+                                    <source src="data/projects/cpu-video.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+        
+                            <!-- Organized Content on the right -->
+                            <div class="modal-details">
+                                <dl class="details-list">
+                                    <dt>Position:</dt>
+                                    <dd>Creator</dd>
+        
+                                    <dt>Tools Used:</dt>
+                                    <dd>Python, Assembly, Logisim</dd>
+        
+                                    <dt>Description:</dt>
+                                    <dd>
+                                        Designed a basic CPU with four registers using Logisim, implemented key functions, created an assembly language and decoder in Python, and authored a user manual, demonstrating comprehensive CPU operation knowledge.
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="workday">
+                <article class="chip" id="workday-chip">
+                    <img src="data/projects/workday-logo.png" alt="workday-logo" class="chip-logo">
+                    <h2 class="chip-name">Workday Form Filler</h2>
+                    <h3 class="chip-time">September 2023 - November 2023</h3>
+                </article>
+        
+                <!-- Popup Modal -->
+                <div id="workday-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="workday-close">&times;</span>
+        
+                        <div class="modal-body">
+                            <!-- Video Container with Title Above -->
+                            <div class="video-container">
+                                <h2>Form Filler</h2>
+                                <img src="data/projects/form-video.png" alt="form-pic" class="modal-video">
+                            </div>
+        
+                            <!-- Organized Content on the right -->
+                            <div class="modal-details">
+                                <dl class="details-list">
+                                    <dt>Position:</dt>
+                                    <dd>Creator</dd>
+        
+                                    <dt>Tools Used:</dt>
+                                    <dd>HTML, JSON, JavaScript</dd>
+        
+                                    <dt>Description:</dt>
+                                    <dd>
+                                        Developed a custom Google Chrome extension using JSON, HTML, and JavaScript to streamline Workday form applications with one-click functionality, ensuring compatibility with pre-programmed company-specific details.                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="section" id="contact-section">
+            <label for="contact-section" class="card-label">Lets Connect!</label>
             <div class="verticleContact">
                 <div id="contactMsg" hidden></div>
                 <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
@@ -259,8 +376,10 @@
         </section>
 
     </div>
-    <script src="public/js/about.js"></script>
-    <script src="public/js/work.js"></script>
+    <footer>
+
+    </footer>
+    <script src="public/js/popUp.js"></script>
     <script src="public/js/section.js"></script>
     <script src="public/js/universe.js"></script>
     <script src="public/js/contact.js"></script>

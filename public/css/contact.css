@@ -1,10 +1,13 @@
 /* Contact Section */
 #contact-section {
-    background: linear-gradient(to bottom, #98fb98 0%, #2e8b57 50%, #006400 100%); /* Light green to dark green gradient */
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: linear-gradient(to bottom, #87cefa 0%, #b0e0e6 50%, #f0f8ff 100%);    display: flex;
+    justify-content: space-between; /* Align the content to the left */
+    align-items: flex-start; /* Align items to the top */
+    padding: 2%; /* Padding to space out the content */
+    box-sizing: border-box;
+    column-gap: 5% ;
+    height: auto; /* Allow the height to adjust to content */
+    flex-wrap: wrap; /* Allow wrapping of items when screen size reduces */
 }
 
 #contact-section form {

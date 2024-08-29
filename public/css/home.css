@@ -84,6 +84,9 @@
     flex-wrap: nowrap; /* Prevent icons from wrapping to the next line */
 }
 
+.home-contact a {
+    margin: 0 10px; /* Space out the contact links */
+}
 
 .home-contact img {
     width: 10vw; /* Adjust the size of the icons */

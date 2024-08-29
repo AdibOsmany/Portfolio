@@ -85,12 +85,12 @@
 }
 
 .home-contact a {
-    margin: 0 10px; /* Space out the contact links */
+    margin: 0 20px; /* Space out the contact links */
 }
 
 .home-contact img {
-    width: 10vw; /* Adjust the size of the icons */
-    height: 10vh;
+    width: 50px; /* Adjust the size of the icons */
+    height: 50px;
 }
 
 /* Responsive adjustments */

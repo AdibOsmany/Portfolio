@@ -43,6 +43,7 @@
 .home-greeting {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center-align text and contact links */
     justify-content: center;
     text-align: center; 
     z-index: 2; 
@@ -76,6 +77,19 @@
         0 0 5px #043785;
 }
 
+/* Home Contact Links */
+.home-contact {
+    display: flex;
+    justify-content: center; /* Center-align the contact links */
+    flex-wrap: nowrap; /* Prevent icons from wrapping to the next line */
+}
+
+
+.home-contact img {
+    width: 10vw; /* Adjust the size of the icons */
+    height: 10vh;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .homeDiv {
@@ -94,6 +108,11 @@
 
     #role {
         font-size: 5vw; /* Adjust role size for smaller screens */
+    }
+
+    .home-contact img {
+        width: 35px; /* Adjust icon size for smaller screens */
+        height: 35px;
     }
 }
 

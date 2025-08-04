@@ -3,6 +3,8 @@ import Home from './components/home.tsx';
 import About from './components/about.tsx';
 import initials from './assets/initial.svg';
 import { Routes, Link, Route } from 'react-router-dom';
+import WorkExperience from './components/workExperience.tsx';
+import VantaBackground from './components/background.tsx';
 function App() {
   return (
     <div className="relative min-h-screen text-white overflow-hidden">
@@ -32,11 +34,18 @@ function App() {
       </header>
 
       {/* Content Area */}
+      <VantaBackground
+        highlightColor={0x3399ff}   // Sky blue (for glowing highlights)
+        midtoneColor={0x0033cc}     // Rich blue (core fog structure)
+        lowlightColor={0xff4500}    // Orange-red (lowlight flickers)
+        baseColor={0x000814}        // Deep navy (almost-black backdrop)
+      />
+
       <main className="flex-grow p-6">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-
+          <Route path="/work-experience" element={<WorkExperience />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>

@@ -1,10 +1,10 @@
 
 import Home from './components/home.tsx';
 import About from './components/about.tsx';
-import initials from './assets/initial.svg';
 import { Routes, Link, Route } from 'react-router-dom';
 import WorkExperience from './components/workExperience.tsx';
 import VantaBackground from './components/background.tsx';
+
 function App() {
   return (
     <div className="relative min-h-screen text-white overflow-hidden">
@@ -12,7 +12,7 @@ function App() {
         <Link to="/" className="flex items-center space-x-3">
           <div className="relative w-12 h-12 rounded-full overflow-hidden" id="navInitial">
             <img
-              src={initials}
+              src="/initial.svg"
               alt="inititals"
               className="absolute left-[1px] top-[-2px] w-full h-full object-cover"
             />

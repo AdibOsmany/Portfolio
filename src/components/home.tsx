@@ -1,7 +1,4 @@
-import headShot from '../assets/headShot.webp';
-import githubIcon from '../assets/github-icon.svg';
-import linkedinIcon from '../assets/linkedin-app-icon.svg';
-import emailIcon from '../assets/purple-mail-icon.svg';
+
 import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 
@@ -18,7 +15,7 @@ function Home() {
 
                     <div className="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden relative border-4 border-blue-600/10 ring-4 ring-[#c0c0c0] shadow-xl">
                         <img
-                            src={headShot}
+                            src="/headShot.webp"
                             alt="Adib's profile picture"
                             className="w-72 h-64 object-cover"
                         />
@@ -50,7 +47,7 @@ function Home() {
                                 rel="noopener noreferrer"
                                 className="hover:scale-110 transition-transform"
                             >
-                                <img src={githubIcon} alt="GitHub" className="w-8 h-8" />
+                                <img src="/github-icon.svg" alt="GitHub" className="w-8 h-8" />
                             </Link>
                             <Link
                                 to="https://www.linkedin.com/in/adib-osmany/"
@@ -58,13 +55,13 @@ function Home() {
                                 rel="noopener noreferrer"
                                 className="hover:scale-110 transition-transform"
                             >
-                                <img src={linkedinIcon} alt="LinkedIn" className="w-8 h-8" />
+                                <img src="/linkedin-app-icon.svg" alt="LinkedIn" className="w-8 h-8" />
                             </Link>
                             <Link
                                 to="mailto:adibosmany8@gmail.com"
                                 className="hover:scale-110 transition-transform"
                             >
-                                <img src={emailIcon} alt="Email" className="w-8 h-8" />
+                                <img src="/purple-mail-icon.svg" alt="Email" className="w-8 h-8" />
                             </Link>
                         </div>
                     </div>

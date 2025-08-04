@@ -1,41 +1,47 @@
 
-import './App.css';
 import Home from './components/home.tsx';
 import About from './components/about.tsx';
-import headShot from './assets/initial.svg'
+import initials from './assets/initial.svg';
 import { Routes, Link, Route } from 'react-router-dom';
-
-
 function App() {
   return (
-    <div className="relative flex justify-center items-center h-64 w-64 overflow-hidden perspective-1000">
-      <header className='App-header'>
-        <h1 className='App-title'>
-          <Link className="App-title" to='/'>
-            <img src={headShot} alt="Adib's profile picture" className="nav-picture" />
-          </Link>
-        </h1>
-        <div className='headerLink'>
-          <Link className='showlink' to='/about'>
+    <div className="relative min-h-screen text-white overflow-hidden">
+      <header className="flex flex-col md:flex-row items-center justify-between p-4 shadow-md bg-white z-10">
+        <Link to="/" className="flex items-center space-x-3">
+          <div className="relative w-12 h-12 rounded-full overflow-hidden" id="navInitial">
+            <img
+              src={initials}
+              alt="inititals"
+              className="absolute left-[1px] top-[-2px] w-full h-full object-cover"
+            />
+          </div>
+          <h1 className="text-xl font-bold text-gray-800 hidden sm:block">Adib Osmany</h1>
+        </Link>
+
+        <nav className="flex gap-6 mt-4 md:mt-0">
+          <Link to="/about" className="text-gray-700 hover:text-purple-600 transition">
             About
           </Link>
-          <Link className='showlink' to='/work-experience'>
+          <Link to="/work-experience" className="text-gray-700 hover:text-purple-600 transition">
             Work Experience
           </Link>
-          <Link className='showlink' to='/projects'>
+          <Link to="/projects" className="text-gray-700 hover:text-purple-600 transition">
             Projects
           </Link>
-        </div>
+        </nav>
       </header>
-      <br />
-      <br />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<Home />} />
-      </Routes>
+
+      {/* Content Area */}
+      <main className="flex-grow p-6">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

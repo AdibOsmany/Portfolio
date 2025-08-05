@@ -12,7 +12,7 @@ function App() {
         <Link to="/" className="flex items-center space-x-3">
           <div className="relative w-12 h-12 rounded-full overflow-hidden" id="navInitial">
             <img
-              src="/initial.svg"
+              src="/media/initial.svg"
               alt="inititals"
               className="absolute left-[1px] top-[-2px] w-full h-full object-cover"
             />
@@ -34,12 +34,7 @@ function App() {
       </header>
 
       {/* Content Area */}
-      <VantaBackground
-        highlightColor={0x3399ff}   // Sky blue (for glowing highlights)
-        midtoneColor={0x0033cc}     // Rich blue (core fog structure)
-        lowlightColor={0xff4500}    // Orange-red (lowlight flickers)
-        baseColor={0x000814}        // Deep navy (almost-black backdrop)
-      />
+      <VantaBackground />
 
       <main className="flex-grow p-6">
         <Routes>

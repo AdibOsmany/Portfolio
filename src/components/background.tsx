@@ -1,18 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-interface VantaBackgroundProps {
-    highlightColor?: number;
-    midtoneColor?: number;
-    lowlightColor?: number;
-    baseColor?: number;
-}
-
-export default function VantaBackground({
-    highlightColor = 0xff00ff,
-    midtoneColor = 0x4400ff,
-    lowlightColor = 0x00e0ff,
-    baseColor = 0x0a001f,
-}: VantaBackgroundProps) {
+export default function VantaBackground() {
     const vantaRef = useRef<HTMLDivElement>(null);
     const [vantaEffect, setVantaEffect] = useState<any>(null);
 
@@ -24,10 +12,10 @@ export default function VantaBackground({
                 mouseControls: true,
                 touchControls: true,
                 gyroControls: false,
-                highlightColor,
-                midtoneColor,
-                lowlightColor,
-                baseColor,
+                highlightColor: 0x3399ff,   // Sky blue (for glowing highlights)
+                midtoneColor: 0x0033cc,   // Rich blue (core fog structure)
+                lowlightColor: 0xff4500,    // Orange-red (lowlight flickers)
+                baseColor: 0x000814,        // Deep navy (almost-black backdrop)
                 blurFactor: 0.6,
                 speed: 1.0,
                 zoom: 1.0,
@@ -39,7 +27,7 @@ export default function VantaBackground({
         return () => {
             vantaEffect?.destroy();
         };
-    }, [vantaEffect, highlightColor, midtoneColor, lowlightColor, baseColor]);
+    }, [vantaEffect]);
 
     return <div ref={vantaRef} className="absolute inset-0 -z-10 w-full h-full" />;
 }

@@ -9,11 +9,12 @@
             "Python",
             "C/C++",
             "Linux",
-            "Git"
+            "Git",
+            "SQL"
         ],
         "description": "Worked on multiple projects using a range of technologies to develop and maintain reliable, high-performance radar simulation software for air traffic control systems.",
-        "picture": "/ufa_inc_logo.jpg",
-        "video": "/ufa_video.mp4"
+        "picture": "/media/ufa_inc_logo.jpg",
+        "video": "/media/ufa_video.mp4"
     },
     {
         "company": "Stevens Institute of Technology",
@@ -25,8 +26,8 @@
             "JUnit"
         ],
         "description": "Assisted students in mastering data structures and Java through lab facilitation, assignment evaluation, and one-on-one support, including debugging and troubleshooting.",
-        "picture": "/stevens_institute_of_technology_logo.jpg",
-        "video": "/stevens-video.mp4"
+        "picture": "/media/stevens_institute_of_technology_logo.jpg",
+        "video": "/media/stevens-video.mp4"
     },
     {
         "company": "Dunkin'",
@@ -35,7 +36,7 @@
         "endTime": "January 2024",
         "tools": [],
         "description": "Supported daily operations in a fast-paced environment by delivering exceptional customer service, training new team members, and improving equipment reliability and service efficiency through hands-on problem-solving and process enhancements.",
-        "picture": "/dunkin.png",
+        "picture": "/media/dunkin.png",
         "video": null
     }
 ]

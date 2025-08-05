@@ -112,19 +112,19 @@ const WorkExperience: React.FC = () => {
                                 <div className="space-y-3">
                                     <dl className="grid grid-cols-3 gap-x-4 gap-y-3 text-sm">
                                         {/* Position */}
-                                        <dt className="font-bold text-right text-[#2c3e50]">Position:</dt>
-                                        <dd className="col-span-2">{selectedWork?.position}</dd>
+                                        <dt className="text-right text-[#2c3e50]">Position:</dt>
+                                        <dd className="col-span-2 font-bold">{selectedWork?.position}</dd>
 
                                         {/* Duration */}
-                                        <dt className="font-bold text-right text-[#2c3e50]">Duration:</dt>
-                                        <dd className="col-span-2">
+                                        <dt className="text-right text-[#2c3e50]">Duration:</dt>
+                                        <dd className="font-bold col-span-2">
                                             {selectedWork?.startTime} – {selectedWork?.endTime ?? 'Present'}
                                         </dd>
 
                                         {/* Tools Used */}
                                         {selectedWork?.tools && selectedWork.tools.length > 0 && (
                                             <>
-                                                <dt className="font-bold text-right text-[#2c3e50]">Tools Used:</dt>
+                                                <dt className="text-right text-[#2c3e50]">Tools Used:</dt>
                                                 <dd className="col-span-2 flex flex-wrap gap-2">
                                                     {selectedWork.tools.map((tool, idx) => (
                                                         <span
@@ -140,8 +140,8 @@ const WorkExperience: React.FC = () => {
 
 
                                         {/* Description */}
-                                        <dt className="font-bold text-right text-[#2c3e50]">Description:</dt>
-                                        <dd className="col-span-2">{selectedWork?.description}</dd>
+                                        <dt className="text-right text-[#2c3e50]">Description:</dt>
+                                        <dd className="font-bold col-span-2">{selectedWork?.description}</dd>
                                     </dl>
 
 

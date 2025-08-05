@@ -15,7 +15,7 @@ function Home() {
 
                     <div className="w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden relative border-4 border-blue-600/10 ring-4 ring-[#c0c0c0] shadow-xl">
                         <img
-                            src="/headShot.webp"
+                            src="/media/headShot.webp"
                             alt="Adib's profile picture"
                             className="w-72 h-64 object-cover"
                         />
@@ -47,7 +47,7 @@ function Home() {
                                 rel="noopener noreferrer"
                                 className="hover:scale-110 transition-transform"
                             >
-                                <img src="/github-icon.svg" alt="GitHub" className="w-8 h-8" />
+                                <img src="/media/github-icon.svg" alt="GitHub" className="w-8 h-8" />
                             </Link>
                             <Link
                                 to="https://www.linkedin.com/in/adib-osmany/"
@@ -55,13 +55,13 @@ function Home() {
                                 rel="noopener noreferrer"
                                 className="hover:scale-110 transition-transform"
                             >
-                                <img src="/linkedin-app-icon.svg" alt="LinkedIn" className="w-8 h-8" />
+                                <img src="/media/linkedin-app-icon.svg" alt="LinkedIn" className="w-8 h-8" />
                             </Link>
                             <Link
                                 to="mailto:adibosmany8@gmail.com"
                                 className="hover:scale-110 transition-transform"
                             >
-                                <img src="/purple-mail-icon.svg" alt="Email" className="w-8 h-8" />
+                                <img src="/media/purple-mail-icon.svg" alt="Email" className="w-8 h-8" />
                             </Link>
                         </div>
                     </div>

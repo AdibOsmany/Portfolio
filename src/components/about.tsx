@@ -46,7 +46,7 @@ const About: React.FC = () => {
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div>
+                    <div className="education">
                         <h3 className="text-2xl font-bold text-purple-400 text-center mb-5 drop-shadow-[0_1px_0_black] ">
                             Education
                         </h3>
@@ -164,7 +164,7 @@ const About: React.FC = () => {
 
                         </Modal>
                     </div>
-                    <div>
+                    <div className="interests flex flex-col items-center justify-top">
                         <h3 className="text-2xl font-bold text-purple-400 text-center mb-5 drop-shadow-[0_1px_0_black] ">
                             Interests
                         </h3>
@@ -187,7 +187,7 @@ const About: React.FC = () => {
                         </div>
 
                     </div>
-                    <div>
+                    <div className="skills flex flex-col items-center justify-top">
                         <h3 className="text-2xl font-bold text-purple-400 text-center mb-5 drop-shadow-[0_1px_0_black] ">
                             Skills
                         </h3>

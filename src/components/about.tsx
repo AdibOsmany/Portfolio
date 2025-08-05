@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
     CardContent,
-    Typography,
     Modal,
     Box,
     DialogActions,
@@ -66,15 +65,15 @@ const About: React.FC = () => {
 
                                 {/* Text Content */}
                                 <CardContent className="text-center space-y-1">
-                                    <Typography variant="h6" className="text-xl font-bold text-white group-hover:text-black">
+                                    <h6 className="text-xl font-bold text-white group-hover:text-black">
                                         Stevens Institute of Technology
-                                    </Typography>
-                                    <Typography variant="subtitle1" className="italic text-white group-hover:text-black">
+                                    </h6>
+                                    <p className="italic text-white group-hover:text-black">
                                         Computer Science
-                                    </Typography>
-                                    <Typography variant="body2" className="text-sm text-gray-300 group-hover:text-gray-700">
+                                    </p>
+                                    <p className="text-sm text-gray-300 group-hover:text-gray-700">
                                         September 2022 – May 2025
-                                    </Typography>
+                                    </p>
                                 </CardContent>
                             </div>
                         </div>
@@ -112,7 +111,7 @@ const About: React.FC = () => {
 
                                             <>
                                                 <dt className="text-center font-semibold text-[#2c3e50]">Courses:</dt>
-                                                <dd className="col-span-2 flex flex-wrap gap-2">
+                                                <dd className="col-span-2 flex flex-wrap gap-2 justify-center">
                                                     {courses.map((course, idx) => (
                                                         <span
                                                             key={idx}
@@ -127,7 +126,7 @@ const About: React.FC = () => {
 
                                             {/* Description */}
                                             <dt className="text-center font-semibold text-[#2c3e50]">Extracurriculars:</dt>
-                                            <dd className="col-span-2 flex flex-wrap gap-2">
+                                            <dd className="col-span-2 flex flex-wrap gap-2 justify-center">
                                                 {ecs.map((ec, idx) => (
                                                     <span
                                                         key={idx}
@@ -139,7 +138,7 @@ const About: React.FC = () => {
                                             </dd>
 
                                             <dt className="font-semibold text-center text-[#2c3e50]">Awards:</dt>
-                                            <dd className="col-span-2 flex flex-wrap gap-2">
+                                            <dd className="col-span-2 flex flex-wrap gap-2 justify-center">
                                                 {awards.map((award, idx) => (
                                                     <span
                                                         key={idx}

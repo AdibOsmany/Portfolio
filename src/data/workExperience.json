@@ -1,6 +1,6 @@
 [
     {
-        "company": "Ufa, Inc.",
+        "name": "Ufa, Inc.",
         "position": "Software Engineer",
         "startTime": "July 2024",
         "endTime": null,
@@ -17,7 +17,7 @@
         "video": "/media/ufa_video.mp4"
     },
     {
-        "company": "Stevens Institute of Technology",
+        "name": "Stevens Institute of Technology",
         "position": "Data Structures Course Assistant",
         "startTime": "January 2024",
         "endTime": "May 2024",
@@ -30,7 +30,7 @@
         "video": "/media/stevens-video.mp4"
     },
     {
-        "company": "Dunkin'",
+        "name": "Dunkin'",
         "position": "Crew Member",
         "startTime": "June 2022",
         "endTime": "January 2024",

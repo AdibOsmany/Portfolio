@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-primary: 'Orbitron', sans-serif;
+  --font-secondary: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  font-family: var(--font-secondary);
+  /* Default to body font */
   line-height: 1.5;
   font-weight: 400;
 

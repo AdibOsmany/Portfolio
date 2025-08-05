@@ -2,9 +2,10 @@
 import Home from './components/home.tsx';
 import About from './components/about.tsx';
 import { Routes, Link, Route } from 'react-router-dom';
-import WorkExperience from './components/workExperience.tsx';
+import PageInfo from './components/pageInfo.tsx';
 import VantaBackground from './components/background.tsx';
-
+import workData from './data/workExperience.json';
+import projectData from './data/projects.json'
 function App() {
   return (
     <div className="relative min-h-screen text-white overflow-hidden">
@@ -40,7 +41,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/work-experience" element={<WorkExperience />} />
+          <Route path="/work-experience" element={<PageInfo title="Work Experience" data={workData} />} />
+          <Route path="/projects" element={<PageInfo title="Projects" data={projectData} />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>

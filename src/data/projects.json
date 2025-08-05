@@ -1,0 +1,96 @@
+[
+    {
+        "name": "Financial Tracker",
+        "position": "Developer",
+        "startTime": "June 2025",
+        "endTime": null,
+        "tools": [
+            "Jetpack Compose",
+            "Plaid API",
+            "GPT-4",
+            "Kotlin"
+        ],
+        "description": "Developing a cross-platform app that uses Plaid API and GPT-4 to help users monitor spending and receive personalized financial insights.",
+        "picture": null,
+        "video": null
+    },
+    {
+        "name": "Tiny C Compiler",
+        "position": "Creator",
+        "startTime": "May 2025",
+        "endTime": "June 2025",
+        "tools": [
+            "C",
+            "x64 Assembly"
+        ],
+        "description": "Built a minimal C compiler from scratch with support for parsing and generating x64 assembly for arithmetic operations.",
+        "picture": null,
+        "video": null
+    },
+    {
+        "name": "Senior Design Marketplace",
+        "position": "Team Lead",
+        "startTime": "September 2024",
+        "endTime": "May 2025",
+        "tools": [
+            "Node.js",
+            "Express.js",
+            "Redis",
+            "MongoDB",
+            "React.js",
+            "Tailwind CSS",
+            "Azure",
+            "Docker",
+            "GitHub Actions",
+            "OWASP ZAP",
+            "Trivy"
+        ],
+        "description": "Led development of a secure full-stack web application to facilitate seamless collaboration and team formation for senior design projects across all majors at Stevens Institute of Technology",
+        "picture": null,
+        "video": null
+    },
+    {
+        "name": "Tetris AI",
+        "position": "Developer",
+        "startTime": "February 2024",
+        "endTime": "August 2024",
+        "tools": [
+            "Python",
+            "PyTorch",
+            "Stable-Baselines3",
+            "Open AI Gym",
+            "EasyOcr"
+        ],
+        "description": "Developed and deployed an AI model using Proximal Policy Optimization Reinforcement Learning algorithm for Tetris game play, earning recognition and selection for display at the 2024 SES Symposium on Generative AI.",
+        "picture": "/media/projects/tetris_logo.png",
+        "video": "/media/projects/tetris-video.mp4"
+    },
+    {
+        "name": "CPU",
+        "position": "Co-Developer",
+        "startTime": "November 2023",
+        "endTime": "December 2023",
+        "tools": [
+            "Python",
+            "Assembly",
+            "Logisim"
+        ],
+        "description": "Designed a basic CPU with four registers using Logisim, implemented key functions, created an assembly language and decoder in Python, and authored a user manual, demonstrating comprehensive CPU operation knowledge.",
+        "picture": "/media/projects/cpu-logo.png",
+        "video": "/media/projects/cpu-video.mp4"
+    },
+    {
+        "name": "Workday Form Filler",
+        "position": "Developer",
+        "startTime": "September 2023",
+        "endTime": "November 2023",
+        "tools": [
+            "HTML",
+            "JSON",
+            "JavaScript"
+        ],
+        "description": "Developed a custom Google Chrome extension using JSON, HTML, and JavaScript to streamline Workday form applications with one-click functionality, ensuring compatibility with pre-programmed company-specific details.",
+        "picture": "/media/projects/workday-logo.png",
+        "video": null
+    }
+]

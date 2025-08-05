@@ -22,8 +22,8 @@ function Home() {
                     </div>
 
                     <div className="text-center md:text-left flex flex-col items-center md:items-start">
-                        <h1 className="text-5xl font-extrabold text-purple-100">Adib</h1>
-                        <h1 className="text-5xl font-extrabold text-purple-100">Osmany</h1>
+                        <h1 className="text-5xl font-extrabold text-purple-100" style={{ fontFamily: 'Verdana' }}>Adib</h1>
+                        <h1 className="text-5xl font-extrabold text-purple-100" style={{ fontFamily: 'Verdana' }}>Osmany</h1>
                         <TypeAnimation
                             sequence={[
                                 'Full-Stack Developer', 1000,
@@ -33,7 +33,7 @@ function Home() {
                                 'Your Next Employee', 1300
                             ]}
                             wrapper="span"
-                            speed={50}
+                            speed={40}
                             className="text-xl text-gray-200 mt-4"
                             repeat={Infinity}
                         />
